@@ -1,0 +1,55 @@
+
+.navbarR{
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    overflow-y: hidden;
+    overflow-x: auto !important;
+}
+.navbarR::-webkit-scrollbar{
+    background-color: #d4d3d4;
+    border-radius: 9em;
+    height: 0px;
+}
+.navbarR::-webkit-scrollbar-thumb{
+    background-color: #b3b0b2;
+    border-radius: 7px;
+}
+.scroll-container{
+    padding: 0 40px;
+    position: relative;
+}
+.scroll-container-phone{
+    display: none;
+}
+@media screen and (max-width: 768px){
+    .scroll-container-laptop{
+        display: none !important;
+    }
+    .scroll-container-phone{
+        display: block !important;
+    }
+    .navbarR{
+        padding-bottom: 0;
+    }
+}
+
+.scroll-container .left-btn, .scroll-container .right-btn{
+    content: "";
+    display: block;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+.scroll-container .left-btn{
+    left: 0;
+}
+.scroll-container .right-btn{
+    right: 0;
+}
